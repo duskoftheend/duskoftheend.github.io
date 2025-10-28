@@ -1,46 +1,158 @@
+/* Tiles & Boxes */
+@font-face {
+  font-family: "NovaMono";
+  src: url(fonts/NovaMono-Regular.ttf);
+}
+
 body {
-  background-color: #92ABAF;
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
 }
-main {
-  background-color: #91CAD4;
-  border: 2px;
-  border-color: lightskyblue;
+
+.headertitle {
+  background-color: rgb(183,190,200, 0.5);
+  border: 2px solid rgb(183,190,200, 0.5);
   border-radius: 15px;
-  border-style: solid;
-  box-shadow: 3px 3px 5px violet, -3px -3px 5px blue;
-  display: flow-root;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
-header {
-  background-color: lightsteelblue;
-  border: 2px;
-  border-color: lightskyblue;
+
+.details {
+  background-color: rgb(183,190,200, 0.5);
+  border: 2px solid rgb(183,190,200, 0.5);
   border-radius: 15px;
-  border-style: solid;
-  box-shadow: 3px 3px 5px violet, -3px -3px 5px blue;
-  display: flow-root;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
-h1 {
-  color: white;
-  text-shadow: 3px 3px 5px violet, -3px -3px 5px blue;
-  margin: 10px;
-}
-p {
-  color: white;
-  text-shadow: 3px 3px 5px violet, -3px -3px 5px blue;
-  margin: 10px;
-}
-footer {
-  background-color: lightsteelblue;
-  border: 2px;
-  border-color: lightskyblue;
+
+.navigation {
+  background-color: rgb(183,190,200, 0.5);
+  border: 2px solid rgb(183,190,200, 0.5);
   border-radius: 15px;
-  border-style: solid;
-  box-shadow: 3px 3px 5px violet, -3px -3px 5px blue;
-  clear: both;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
-#seele {
-  box-shadow: 3px 3px 5px violet, -3px -3px 5px blue;
+
+.menu-con {
+  background-color: rgb(183,190,200, 0.5);
+  border: 2px solid rgb(183,190,200, 0.5);
   border-radius: 15px;
-  float: left;
-  margin: 10px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
+
+.info-nav {
+  background-color: rgb(183,190,200, 0.5);
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.folderbox {
+  background-color: rgb(183,190,200, 0.5);
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Fonts */
+
+.headertitle h1 {
+  font-family: "NovaMono";
+  color: rgb(183,190,200, 0.5);
+}
+
+.details p {
+  font-family: "NovaMono";
+  color: rgb(183,190,200, 0.5);
+}
+
+
+/* Icons */
+
+/* format 
+.icon {
+  background-image: url(icons/circle-info-solid-full.svg);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(251,179,167, 0.5);
+  border-radius: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+*/
+
+.info-icon {
+  background-image: url(icons/circle-info-solid-full.svg);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.contact-icon {
+  background-image: url(icons/address-book-solid-full.svg);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.home-icon {
+  background-image: url(icons/house-solid-full.svg);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.folder-icon {
+  background-image: url(icons/folder-solid-full.svg);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.links-icon {
+  background-image: url(icons/link-solid-full.svg);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.about-me-icon {
+  background-image: url(icons/address-card-solid-full.svg);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.menu-icon {
+  background-image: url(icons/ellipsis-solid-full.svg);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(183,190,200, 0.5);
+  border-radius: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animation & Transitions*/
+
+.details, .headertitle, .navigation, .menu-con, .info-nav, .info-icon, .contact-icon, .home-icon, .folder-icon, .links-icon, .about-me-icon, .menu-icon {
+  transition: border 0.2s ease-in-out;
+}
+
+.details:hover, .headertitle:hover, .navigation:hover, .menu-con:hover, .info-nav:hover, .info-icon:hover, .contact-icon:hover, .home-icon:hover, .folder-icon:hover, .links-icon:hover, .about-me-icon:hover, .menu-icon:hover {
+  border: 4px solid rgb(183,190,200, 0.5);
+}
+
