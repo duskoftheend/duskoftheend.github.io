@@ -51,8 +51,8 @@
         position: absolute;
         bottom: 10px;
         left: 72.5px;
-        width: 150px;
-        height: 700px;
+        width: 250px;
+        height: 500px;
     }
 
     /* Icon */
@@ -137,7 +137,7 @@
     /* Fonts */
 
     .headertitle h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .details p {
