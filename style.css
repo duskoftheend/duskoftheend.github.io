@@ -27,6 +27,7 @@ main .container {
     top: 0;
     left: 0;
     width: 50vw;
+    height: 100svh;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.027);
     border: 1px solid rgba(255, 255, 255, 0.1);
