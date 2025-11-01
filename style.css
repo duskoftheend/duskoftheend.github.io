@@ -54,7 +54,7 @@ main .container .navbar .child {
     align-items: center;
     height: 2rem;
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1vh;
 }
 
 main .container .navbar .child:hover {
@@ -87,7 +87,7 @@ main .container .linkbar .child {
     align-items: center;
     height: 2rem;
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1vh;
 }
 
 main .container .linkbar .child:hover {
