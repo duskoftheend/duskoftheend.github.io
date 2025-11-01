@@ -22,11 +22,12 @@ main {
 
 main .container {
     display: flex;
-    position:fixed;
+    position:absolute;
     flex-wrap: wrap;
     top: 0;
     left: 0;
     width: 50vw;
+    height: 100dvh;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.027);
     border: 1px solid rgba(255, 255, 255, 0.1);
