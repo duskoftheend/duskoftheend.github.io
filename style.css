@@ -118,6 +118,14 @@ h4 {
         font-size: 2vw;
     }
 
+    main .navbar .child {
+        height: 1rem;
+    }
+
+    main .linkbar .child {
+        height: 1rem;
+    }
+
     h4 {
         font-size: 2vw;
     }
