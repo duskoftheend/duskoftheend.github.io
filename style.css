@@ -1,158 +1,99 @@
-/* Tiles & Boxes */
 @font-face {
-  font-family: "NovaMono";
-  src: url(fonts/NovaMono-Regular.ttf);
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+* {
+    font-family: "Montserrat";
 }
 
 body {
-  background-image: url(images/background.png);
-  background-repeat: no-repeat;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.headertitle {
-  background-color: rgb(183,190,200, 0.5);
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 15px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.details {
-  background-color: rgb(183,190,200, 0.5);
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 15px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+main .container {
+    display: flex;
+    position:absolute;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.027);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 5px rgb(68, 74, 136);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
 }
 
-.navigation {
-  background-color: rgb(183,190,200, 0.5);
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 15px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+main .container .navbar {
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
 }
 
-.menu-con {
-  background-color: rgb(183,190,200, 0.5);
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 15px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+main .container .navbar .child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.info-nav {
-  background-color: rgb(183,190,200, 0.5);
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 15px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+main .container .navbar .child:hover {
+    background-color: rgba(255, 255, 255, 0.027);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 5px rgb(68, 74, 136);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
-.folderbox {
-  background-color: rgb(183,190,200, 0.5);
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 15px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+a {
+    text-decoration: none;
+    color: black;
 }
 
-/* Fonts */
-
-.headertitle h1 {
-  font-family: "NovaMono";
-  color: rgb(183,190,200, 0.5);
+main .container .linkbar {
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
 }
 
-.details p {
-  font-family: "NovaMono";
-  color: rgb(183,190,200, 0.5);
+main .container .linkbar .child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-
-/* Icons */
-
-/* format 
-.icon {
-  background-image: url(icons/circle-info-solid-full.svg);
-  background-repeat: no-repeat;
-  border: 2px solid rgb(251,179,167, 0.5);
-  border-radius: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+main .container .linkbar .child:hover {
+    background-color: rgba(255, 255, 255, 0.027);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 5px rgb(68, 74, 136);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-*/
-
-.info-icon {
-  background-image: url(icons/circle-info-solid-full.svg);
-  background-repeat: no-repeat;
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.contact-icon {
-  background-image: url(icons/address-book-solid-full.svg);
-  background-repeat: no-repeat;
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.home-icon {
-  background-image: url(icons/house-solid-full.svg);
-  background-repeat: no-repeat;
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.folder-icon {
-  background-image: url(icons/folder-solid-full.svg);
-  background-repeat: no-repeat;
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.links-icon {
-  background-image: url(icons/link-solid-full.svg);
-  background-repeat: no-repeat;
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.about-me-icon {
-  background-image: url(icons/address-card-solid-full.svg);
-  background-repeat: no-repeat;
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.menu-icon {
-  background-image: url(icons/ellipsis-solid-full.svg);
-  background-repeat: no-repeat;
-  border: 2px solid rgb(183,190,200, 0.5);
-  border-radius: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-/* Animation & Transitions*/
-
-.details, .headertitle, .navigation, .menu-con, .info-nav, .info-icon, .contact-icon, .home-icon, .folder-icon, .links-icon, .about-me-icon, .menu-icon {
-  transition: border 0.2s ease-in-out;
-}
-
-.details:hover, .headertitle:hover, .navigation:hover, .menu-con:hover, .info-nav:hover, .info-icon:hover, .contact-icon:hover, .home-icon:hover, .folder-icon:hover, .links-icon:hover, .about-me-icon:hover, .menu-icon:hover {
-  border: 4px solid rgb(183,190,200, 0.5);
-}
-
