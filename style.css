@@ -110,20 +110,29 @@ h4 {
         width: 100vw;
     }
 
-    main .container .linkbar {
-        bottom: 7vh;
-    }
-
     main .container h4 pre {
         font-size: 2vw;
     }
 
-    main .navbar .child {
+    main .container .navbar .child {
         height: 1rem;
+        padding: 0;
     }
 
-    main .linkbar .child {
+    main .container .linkbar .child {
         height: 1rem;
+        padding: 0;
+    }
+
+    main .container .navbar {
+        bottom: auto;
+        top: 2.5vh;
+    }
+
+    
+    main .container .linkbar {
+        bottom: auto;
+        top: 2.5vh;
     }
 
     h4 {
