@@ -152,3 +152,106 @@ p {
     flex-direction: column;
     gap: 10px;
 }
+
+@media screen and (max-width: 1500px) {
+    .Navigation {
+        width: 16vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .Navigation { 
+        width: 18vw;
+    }
+
+    .Window {
+        width: 35vw;
+        left: 32.5vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .Navigation {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Navigation {
+        width: 22vw;
+    }
+
+    .Window {
+        width: 40vw;
+        left: 30vw;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Navigation {
+        width: 24vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Navigation {
+        width: 26vw;
+    }
+
+    .Window {
+        width: 50vw;
+        left: 25vw;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .Navigation {
+        flex-direction: column;
+        height: 20vh;
+        width: 20vw;
+    }
+    .Window {
+        width: 75vw;
+        left: 12.5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Window {
+        width: 98vw;
+        left: 1vw;
+    }
+}
+
+
+@media screen and (max-width: 389px) {
+    .Navigation {
+        flex-direction: column;
+        height: 20vh;
+        width: 25vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .Navigation {
+        flex-direction: column;
+        height: 20vh;
+        width: 30vw;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 233px) {
+    .Navigation {
+        flex-direction: column;
+        height: 20vh;
+        width: 40vw;
+    }
+}
